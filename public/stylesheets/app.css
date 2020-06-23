@@ -1,0 +1,76 @@
+* {
+	margin : 0;
+	padding : 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #A770EF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 																			12+, Safari 7+ */
+}
+
+.chatbox{
+	width : 500px;
+	min-width: 390px;
+	height: 600px;
+	background: #fff;
+	padding: 25px;
+	margin: 20px auto;
+	box-shadow: 0 3px #ccc;
+}
+
+.chatlogs{
+	padding: 10px;
+	width: 100%;
+	height: 450px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar {
+	width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,0.1);
+	
+}
+.chat{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.chat .chat-message {
+	width : 50%;
+	padding: 15px;
+	margin: 5px 10px 0;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 20px;
+	
+}
+
+#self{
+	display: flex;
+   	flex-direction: row-reverse;
+}
+
+.bot .chat-message{
+	background: #1adda4;
+}
+
+
+#self .chat-message {
+	background: #1ddced;
+	order: -1;
+}
+
+.form-group{
+	padding-top:10px;
+}
+
+
